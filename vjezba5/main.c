@@ -59,9 +59,19 @@ void main()
 	
 	//printf("najduza rijec je %s",najduza(dict));
 	//printf("ukupan broj rijeci je %d",ukupan_broj_rijeci(dict));
+	//dodaj_na_kraj_liste(dict,str1);
+	//dodaj_na_pocetak_liste(dict,str2);
+	//delete_with_more_than10(dict);
+	//swap_first_last(dict);
+	//dodavanje_ispred_10(dict,str1);
+	//prebacivanje_u_novu(dict);
+	//brisanje_prve_2_rici(dict);
+	//zamjena_5_i_50(dict);
 	char str1[]="kraj";
 	char str2[]="pocetak";
-	dodaj_na_kraj_liste(dict,str1);
-	dodaj_na_pocetak_liste(dict,str2);
+	//print(dict);
+	obrana(dict);
 	print(dict);
+	
+	destroy(dict);
 }

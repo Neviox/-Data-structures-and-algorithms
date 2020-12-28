@@ -29,5 +29,6 @@ int filter(Word *w);
 char* najduza(Dictionary dict);
 int ukupan_broj_rijeci(Dictionary dict);
 void dodaj_na_kraj_liste(Dictionary dict, char *str);
+void obrana(Dictionary dict);
 
 #endif
