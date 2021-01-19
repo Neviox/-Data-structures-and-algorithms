@@ -3,8 +3,8 @@
 #include <time.h>
 #include <math.h>
 
-int len = 10;
-//int len = 10000;
+//int len = 10;
+int len = 10000;
 
 typedef struct
 {
