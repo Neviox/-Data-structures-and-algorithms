@@ -30,11 +30,11 @@ void print(Red *red)
     }
 }
 
-void zamjena(Red *red, int indexi, int indexj)
+void zamjena(Red *red, int y, int z)
 {
-    Element temp = red->niz[indexi];
-    red->niz[indexi] = red->niz[indexj];
-    red->niz[indexj] = temp;
+    Element temp = red->niz[y];
+    red->niz[y] = red->niz[z];
+    red->niz[z] = temp;
 }
 void fixup(Red *red, int c)
 {
@@ -72,7 +72,7 @@ void fixdown(Red *red, int r)
     }
 }
 
-void delup(Red *red)
+void deltop(Red *red)
 {
     red->niz[0] = red->niz[len - 1];
     len = len - 1;
@@ -94,7 +94,7 @@ int main()
     print(red);
 
     printf("<-------------!!!!!* Uklanjanje s vrha *!!!!!!-------------->\n");
-    delup(red);
+    deltop(red);
     print(red);
 
     free(red->niz);
